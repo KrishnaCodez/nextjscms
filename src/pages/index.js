@@ -15,9 +15,9 @@ export default function Home({ posts }) {
     <Layout>
       <Intro />
       <div className={styles.container}>
-        {posts.map(({ node }) => {
+        {posts.map(({ node, key }) => {
           return (
-            <div className={styles.postcard}>
+            <div className={styles.postcard} key={node.slug}>
               <Link href={`/posts/` + node.slug} passHref>
                 <a></a>
               </Link>
