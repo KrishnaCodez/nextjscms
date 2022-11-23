@@ -20,6 +20,7 @@
     "**/*.scss": "yarn prettier --write"
   },
   "dependencies": {
+    "@aamodtgroup/gutenberg-styles": "^12.5.4",
     "@apollo/client": "^3.7.1",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",

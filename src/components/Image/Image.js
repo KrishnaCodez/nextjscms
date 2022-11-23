@@ -1,3 +1,5 @@
+/* prettier-ignore */
+
 import ClassName from 'models/classname';
 
 import styles from './Image.module.scss';
@@ -20,7 +22,7 @@ const Image = ({
   return (
     <figure className={imageClassName.toString()}>
       <div className={styles.featuredImageImg}>
-        <img width="800" height="700" src={src} alt={alt || ''} srcSet={srcSet} sizes={sizes} />
+        <img src={src} alt={alt || ''} srcSet={srcSet} sizes={sizes} />
       </div>
       {children && <figcaption>{children}</figcaption>}
       {dangerouslySetInnerHTML && (

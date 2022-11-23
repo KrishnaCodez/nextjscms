@@ -1,75 +1,45 @@
-import useSite from 'hooks/use-site';
-import { getPaginatedPosts } from 'lib/posts';
-import { WebsiteJsonLd } from 'lib/json-ld';
+import Head from 'next/head';
+import Image from 'next/image';
 
 import Layout from 'components/Layout';
-import Header from 'components/Header';
+
 import Section from 'components/Section';
 import Container from 'components/Container';
-import PostCard from 'components/PostCard';
-import Pagination from 'components/Pagination';
-
+import Link from 'next/link';
+import { getPostsForHome } from 'lib/api';
+import Intro from 'components/Intro';
 import styles from 'styles/pages/Home.module.scss';
 
-export default function Home({ posts, pagination }) {
-  const { metadata = {} } = useSite();
-  const { title, description } = metadata;
-
+export default function Home({ posts }) {
   return (
     <Layout>
-      <WebsiteJsonLd siteTitle={title} />
-      <Header>
-        <h1
-          dangerouslySetInnerHTML={{
-            __html: title,
-          }}
-        />
+      <Intro />
+      <div className={styles.container}>
+        {posts.map(({ node }) => {
+          return (
+            <div className={styles.postcard}>
+              <Link href={`/posts/` + node.slug} passHref>
+                <a></a>
+              </Link>
 
-        <p
-          className={styles.description}
-          dangerouslySetInnerHTML={{
-            __html: description,
-          }}
-        />
-      </Header>
-
-      <Section>
-        <Container>
-          <h2 className="sr-only">Posts</h2>
-          <ul className={styles.posts}>
-            {posts.map((post) => {
-              return (
-                <li key={post.slug}>
-                  <PostCard post={post} />
-                </li>
-              );
-            })}
-          </ul>
-          {pagination && (
-            <Pagination
-              addCanonical={false}
-              currentPage={pagination?.currentPage}
-              pagesCount={pagination?.pagesCount}
-              basePath={pagination?.basePath}
-            />
-          )}
-        </Container>
-      </Section>
+              <Link href={`/posts/` + node.slug} passHref>
+                <a>
+                  <h1 className={styles.title}>{node.title}</h1>
+                </a>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+      \
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const { posts, pagination } = await getPaginatedPosts({
-    queryIncludes: 'archive',
-  });
+  const posts = await getPostsForHome();
+
   return {
-    props: {
-      posts,
-      pagination: {
-        ...pagination,
-        basePath: '/posts',
-      },
-    },
+    props: { posts: posts.edges },
   };
 }

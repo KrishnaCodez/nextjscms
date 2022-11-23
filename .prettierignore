@@ -43,3 +43,15 @@ yarn.lock
 public
 
 .all-contributorsrc
+
+/src/lib/api.js
+
+./src/components/Image/Image.js
+./src/components/Intro/index.js
+./src/components/NewPost/index.js
+./src/components/NewPost/NewPost.js
+./src/components/PostCardFI/index.js
+./src/lib/fetcher.js
+./src/lib/postCard.js
+./src/pages/index.js
+./src/pages/[slugParent]/[[...slugChild]].js

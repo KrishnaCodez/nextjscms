@@ -52,30 +52,14 @@ export default function Page({ page, breadcrumbs }) {
         slug={slug}
       />
 
-      <Header>
-        {hasBreadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs} />}
-        {featuredImage && (
-          <FeaturedImage
-            {...featuredImage}
-            src={featuredImage.sourceUrl}
-            dangerouslySetInnerHTML={featuredImage.caption}
-          />
-        )}
-        <h1 className={styles.title}>{title}</h1>
-      </Header>
-
-      <Content>
-        <Section>
-          <Container>
-            <div
-              className={styles.content}
-              dangerouslySetInnerHTML={{
-                __html: content,
-              }}
-            />
-          </Container>
-        </Section>
-
+      <div className={styles.fullContainer}>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{
+            __html: content,
+          }}
+        />
+        =
         {hasChildren && (
           <Section className={styles.sectionChildren}>
             <Container>
@@ -98,7 +82,7 @@ export default function Page({ page, breadcrumbs }) {
             </Container>
           </Section>
         )}
-      </Content>
+      </div>
     </Layout>
   );
 }

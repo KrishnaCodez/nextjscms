@@ -1,25 +1,42 @@
-@import "styles/settings/__settings";
+.img {
+  border-radius: 6.5px;
+}
+.container {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+.postcard {
+  padding: 0;
 
-.description {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  width: auto;
+  margin: 0;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  width: 450px;
 }
 
-.posts {
-  list-style: none;
-  padding-left: 0;
-  margin: -1rem 0;
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
-  & > li {
-    margin: 4em 0;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .postcard {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .title {
+    margin-top: 10px;
+    font-size: 19px;
   }
 }

@@ -1,0 +1,142 @@
+.fullContainer {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+}
+.jm {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+}
+.HeadContainer {
+  margin-left: 20px;
+  margin-top: 5%;
+}
+.wrapper {
+  height: auto;
+  z-index: 10;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+.blurBombsContainer {
+  background: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+}
+.blurBombs {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  max-width: 75rem;
+}
+.blurtriangle {
+  position: absolute;
+  overflow: visible;
+  filter: blur(45.6px);
+  top: 0%;
+  left: -3%;
+  width: 35%;
+}
+
+.blur1 {
+  width: 100%;
+  display: inline;
+}
+
+.blurSemiCircle {
+  position: absolute;
+  overflow: visible;
+  filter: blur(27.6px);
+  bottom: 10%;
+  right: 5%;
+  opacity: 0.5;
+}
+.blur2 {
+  width: 100%;
+  display: inline;
+}
+
+.has1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 135%;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 80px;
+}
+
+.head {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.itemContainer {
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0px auto;
+  margin-top: 4%;
+  height: 60vh;
+  width: 100%;
+  max-width: 75rem;
+  padding-left: clamp(0.875rem, 2vw, 1.5rem);
+  padding-right: clamp(0.875rem, 2vw, 1.5rem);
+}
+
+.container {
+  max-width: 896px;
+  margin-bottom: clamp(0.875rem, 2vw, 1.5rem);
+}
+
+.infoContainer {
+  max-width: 793px;
+}
+
+.info {
+  line-height: 200%;
+  font-weight: 300;
+  font-size: clamp(1.05rem, 1vw, 1.25rem);
+  color: rgb(31, 31, 30);
+  text-align: left;
+  margin-bottom: 0px;
+}
+.dot {
+  color: #007aff;
+}
+
+@media (max-width: 500px) {
+  .HeadContainer {
+    margin-top: 40%;
+    margin-left: 15px;
+  }
+  .itemContainer {
+    width: 97%;
+    margin: 0px;
+    margin-left: 10px;
+    padding-left: 0;
+    padding-right: 0px;
+    height: 53vh;
+  }
+  .blurtriangle {
+    filter: blur(15.6px);
+  }
+  .blurSemiCircle {
+    top: 50%;
+    right: 1;
+  }
+}
