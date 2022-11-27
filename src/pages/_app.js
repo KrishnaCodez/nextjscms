@@ -12,8 +12,8 @@ import { getAllMenus } from 'lib/menus';
 import 'styles/globals.scss';
 import 'styles/wordpress.scss';
 import variables from 'styles/_variables.module.scss';
-import '@aamodtgroup/gutenberg-styles/style.css';
-import '@aamodtgroup/gutenberg-styles/theme.css';
+ 
+import '@urvishmali/kadence-headless-styles/kadence.css';
 
 function App({ Component, pageProps = {}, metadata, recentPosts, categories, menus }) {
   const site = useSiteContext({
