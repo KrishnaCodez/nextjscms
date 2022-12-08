@@ -50,6 +50,8 @@ public
 ./src/components/Intro/index.js
 ./src/components/NewPost/index.js
 ./src/components/NewPost/NewPost.js
+./src/components/LandingSection/LandingSection.js
+./src/components/LandingSection/index.js
 ./src/components/PostCardFI/index.js
 ./src/lib/fetcher.js
 ./src/lib/postCard.js
