@@ -72,7 +72,7 @@ export default function Post({ post, socialImage, related }) {
 
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
 
-      <Header>
+      {/* <Header>
         {featuredImage && (
           <FeaturedImage
             {...featuredImage}
@@ -94,7 +94,7 @@ export default function Post({ post, socialImage, related }) {
           options={metadataOptions}
           isSticky={isSticky}
         />
-      </Header>
+      </Header> */}
 
       <Content>
         <Section>

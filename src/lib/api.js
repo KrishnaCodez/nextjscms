@@ -20,7 +20,7 @@ async function fetchAPI(query, { variables } = {}) {
 export async function getPostsForHome() {
     const data = await fetchAPI(`
     {
-        posts(first: 4) {
+        posts(first: 6) {
             edges {
                 node {
                     title

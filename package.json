@@ -25,6 +25,7 @@
     "@urvishmali/kadence-headless-styles": "^1.0.0",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
+    "framer-motion": "^7.6.19",
     "fuse.js": "^6.6.2",
     "graphql": "^16.6.0",
     "he": "^1.2.0",

@@ -1,0 +1,552 @@
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.landingcontainer {
+  width: 100%;
+  text-align: center;
+}
+.textdiv {
+  width: 60%;
+  margin: auto;
+  margin-top: 9%;
+}
+.landingPageTemplate {
+  font-size: 110px;
+  line-height: 105px;
+  font-family: var(--font-syne);
+  text-shadow: -3px 3px 0#fff;
+}
+
+.paragraphDiv {
+  width: 100%;
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #532c59;
+}
+.velitOdioBibendumEuViver {
+  width: 60%;
+  margin: auto;
+}
+.hero {
+  position: relative;
+}
+
+.letsSellB {
+  margin-top: 32px;
+  background-color: #532c59;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 11px 24px;
+  text-decoration: none;
+}
+
+.logosLineDiv {
+  margin-top: 60px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.flex {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.logoipsum28 {
+  position: relative;
+  height: 24px;
+  flex-shrink: 0;
+  width: 90.04px;
+  overflow: hidden;
+}
+
+.backgroundShapeIcon {
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  width: 180.8px;
+  height: 104.4px;
+  object-fit: cover;
+}
+.backgroundShapeIcon.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in-top;
+}
+.backgroundShapeIcon1,
+.backgroundShapeIcon2,
+.backgroundShapeIcon3 {
+  position: absolute;
+  top: 24px;
+
+  width: 99px;
+  height: 99.6px;
+  object-fit: cover;
+  opacity: 0;
+}
+.backgroundShapeIcon1.animate,
+.backgroundShapeIcon2.animate,
+.backgroundShapeIcon3.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in-right;
+}
+
+.backgroundShapeIcon2,
+.backgroundShapeIcon3 {
+  top: 168px;
+
+  width: 180.6px;
+  height: 201.6px;
+}
+.backgroundShapeIcon2 {
+  left: 681px;
+}
+.backgroundShapeIcon3 {
+  top: 532.2px;
+  right: 230px;
+  width: 180.6px;
+  height: 176.6px;
+}
+
+.backgroundShapeIcon1 {
+  width: 120px;
+  top: 130px;
+  right: 230px;
+}
+.backgroundShapeIcon2.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in-left;
+}
+.backgroundShapeIcon2 {
+  width: 300px;
+  top: 340px;
+  left: 90px;
+  height: 350.6px;
+}
+
+.bg {
+  position: absolute;
+  top: 34.2px;
+  left: 0;
+  background: radial-gradient(50% 50%at 50% 50%, #e36ce6, rgba(255, 255, 255, 0));
+  filter: blur(139.2px);
+  width: 100%;
+  height: 299.4px;
+  opacity: 0.4;
+}
+.mobile {
+  display: none;
+}
+
+/* Large Screen for laptop */
+
+@media (min-width: 2560px) {
+  .landingPageTemplate {
+    font-size: 230px;
+    line-height: 230px;
+    color: black;
+  }
+
+  /* .backgroundShapeIcon1,
+  .backgroundShapeIcon2,
+  .backgroundShapeIcon3  */
+  .backgroundShapeIcon1 {
+    width: 300px;
+    height: 320px;
+    right: 440px;
+  }
+  .backgroundShapeIcon2 {
+    width: 560px;
+    height: 600px;
+    left: 0;
+    top: 700px;
+  }
+  .backgroundShapeIcon3 {
+    width: 300px;
+    height: 370px;
+    top: 800px;
+    right: 600px;
+  }
+  .backgroundShapeIcon {
+    width: 300px;
+    height: 370px;
+    top: 100px;
+  }
+  .letsSellB {
+    margin-top: 84px;
+    background-color: #532c59;
+    border-radius: 7px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: normal;
+    padding: 18px 40px;
+    text-decoration: none;
+  }
+  .velitOdioBibendumEuViver {
+    width: 70%;
+  }
+  .paragraphDiv {
+    width: 100%;
+    margin-top: 35px;
+    font-size: 34px;
+    line-height: 40px;
+    color: #532c59;
+  }
+  .logoipsum28 {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .backgroundShapeIcon1 {
+    width: 130px;
+    height: 130px;
+    right: 130px;
+    top: 20px;
+  }
+  .backgroundShapeIcon3 {
+    width: 155.2px;
+    height: 155.2px;
+    top: 410px;
+    right: 130px;
+  }
+  .backgroundShapeIcon2 {
+    width: 300px;
+    height: 300px;
+    left: 0;
+    top: 300px;
+  }
+  .landingPageTemplate {
+    font-size: 81px;
+    line-height: 90px;
+  }
+}
+/* Tablet */
+
+@media only screen and (max-width: 961px) {
+  .laptop {
+    display: none;
+  }
+  .textdiv {
+    margin-top: 30%;
+    width: 100%;
+  }
+  .landingPageTemplate {
+    font-size: 90px;
+    line-height: 100px;
+  }
+  .mobile {
+    display: block;
+    overflow-x: hidden;
+  }
+  .backgroundShapeIcon4,
+  .backgroundShapeIcon5 {
+    position: absolute;
+    top: 75.6px;
+
+    width: 68.01px;
+    height: 68.4px;
+    object-fit: cover;
+  }
+  .backgroundShapeIcon5 {
+    top: 90.52px;
+    right: 0px;
+    width: 120.92px;
+    height: 120.24px;
+  }
+  .backgroundShapeIcon6,
+  .backgroundShapeIcon7 {
+    position: absolute;
+    top: 220.84px;
+    width: 73.54px;
+    height: 83.32px;
+    object-fit: cover;
+  }
+  .backgroundShapeIcon7 {
+    top: 540.8px;
+    right: 0px;
+    width: 95px;
+    height: 150px;
+  }
+  .backgroundShapeIcon6 {
+    top: 530.8px;
+    left: 0;
+    width: 140px;
+    height: 190px;
+  }
+  .backgroundShapeIcon4 {
+    top: 130.8px;
+    left: 0;
+    width: 100px;
+    height: 170px;
+  }
+  .backgroundShapeIcon6.animate,
+  .backgroundShapeIcon4.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-left;
+  }
+  .backgroundShapeIcon7.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-right;
+  }
+  .backgroundShapeIcon5.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-top;
+  }
+  .bg {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    background: radial-gradient(50% 50%at 50% 50%, #e36ce6, rgba(255, 255, 255, 0));
+    filter: blur(70.2px);
+    width: 100%;
+    height: 299.4px;
+    opacity: 0.4;
+  }
+}
+
+/* Medium Mobile Screen */
+@media only screen and (max-width: 560px) {
+  .backgroundShapeIcon,
+  .backgroundShapeIcon1.animate,
+  .backgroundShapeIcon2.animate,
+  .backgroundShapeIcon3.animate {
+    display: none;
+  }
+  .textdiv {
+    margin-top: 30%;
+    width: 90%;
+  }
+  .landingPageTemplate {
+    font-size: 60px;
+    color: #532c59;
+    line-height: 70px;
+  }
+  .logosLineDiv {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .velitOdioBibendumEuViver {
+    width: 80%;
+  }
+  .mobile {
+    display: block;
+    overflow-x: hidden;
+  }
+  .backgroundShapeIcon4,
+  .backgroundShapeIcon5 {
+    position: absolute;
+    top: 75.6px;
+
+    width: 68.01px;
+    height: 68.4px;
+    object-fit: cover;
+  }
+  .backgroundShapeIcon5 {
+    top: 46.52px;
+    right: 1px;
+    width: 95.92px;
+    height: 95.24px;
+  }
+  .backgroundShapeIcon6,
+  .backgroundShapeIcon7 {
+    position: absolute;
+    top: 220.84px;
+
+    width: 73.54px;
+    height: 83.32px;
+    object-fit: cover;
+  }
+  .backgroundShapeIcon7 {
+    top: 417.8px;
+
+    right: 0px;
+    width: 90px;
+    height: 120px;
+  }
+  .backgroundShapeIcon6 {
+    top: 430.8px;
+    width: 100px;
+    left: 0;
+    height: 170px;
+  }
+  .backgroundShapeIcon4 {
+    top: 130.8px;
+    width: 100px;
+    height: 170px;
+    left: 0;
+  }
+  .backgroundShapeIcon6.animate,
+  .backgroundShapeIcon4.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-left;
+  }
+  .backgroundShapeIcon7.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-right;
+  }
+  .backgroundShapeIcon5.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-top;
+  }
+  .bg {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: radial-gradient(50% 50%at 50% 50%, #e36ce6, rgba(255, 255, 255, 0));
+    filter: blur(70.2px);
+    width: 100%;
+    height: 299.4px;
+    opacity: 0.4;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .backgroundShapeIcon,
+  .backgroundShapeIcon1.animate,
+  .backgroundShapeIcon2.animate,
+  .backgroundShapeIcon3.animate {
+    display: none;
+  }
+  .textdiv {
+    margin-top: 30%;
+    width: 100%;
+  }
+  .landingPageTemplate {
+    font-size: 43px;
+    line-height: 50px;
+    color: #532c59;
+  }
+  .logosLineDiv {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .velitOdioBibendumEuViver {
+    width: 80%;
+  }
+  .mobile {
+    display: block;
+    overflow-x: hidden;
+  }
+  .backgroundShapeIcon4,
+  .backgroundShapeIcon5 {
+    position: absolute;
+    top: 75.6px;
+
+    width: 68.01px;
+    height: 68.4px;
+    object-fit: cover;
+  }
+  .backgroundShapeIcon5 {
+    top: 46.52px;
+    right: 0px;
+    width: 95.92px;
+    height: 95.24px;
+  }
+  .backgroundShapeIcon6,
+  .backgroundShapeIcon7 {
+    position: absolute;
+    top: 220.84px;
+
+    width: 73.54px;
+    height: 83.32px;
+    object-fit: cover;
+  }
+  .backgroundShapeIcon7 {
+    top: 417.8px;
+    right: 0px;
+    width: 90px;
+    height: 120px;
+  }
+  .backgroundShapeIcon6 {
+    top: 430.8px;
+    width: 100px;
+    left: 0;
+    height: 170px;
+  }
+  .backgroundShapeIcon4 {
+    top: 130.8px;
+    width: 100px;
+    height: 170px;
+    left: 0;
+  }
+  .backgroundShapeIcon6.animate,
+  .backgroundShapeIcon4.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-left;
+  }
+  .backgroundShapeIcon7.animate {
+    animation: fadeIn 1.5s;
+  }
+  .backgroundShapeIcon5.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in-top;
+  }
+  .bg {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: radial-gradient(50% 50%at 50% 50%, #e36ce6, rgba(255, 255, 255, 0));
+    filter: blur(70.2px);
+    width: 100%;
+    height: 299.4px;
+    opacity: 0.4;
+  }
+}
+
+/* Smallest Screen For Mobile */
+
+@media (max-width: 320px) {
+  .landingPageTemplate {
+    font-size: 35px;
+    line-height: 45px;
+    color: #532c59;
+  }
+}

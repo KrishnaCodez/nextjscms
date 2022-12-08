@@ -9,11 +9,18 @@ import Link from 'next/link';
 import { getPostsForHome } from 'lib/api';
 import Intro from 'components/Intro';
 import styles from 'styles/pages/Home.module.scss';
+import LandingSection from 'components/LandingSection';
+import { motion } from 'framer-motion';
 
 export default function Home({ posts }) {
   return (
-    <Layout>
-      <Intro />
+    <div>
+      <LandingSection />
+      <div className={styles.headContainer}>
+        <h1 className={styles.h1}>
+          Our Latest <br /> Blog
+        </h1>
+      </div>
       <div className={styles.container}>
         {posts.map(({ node, key }) => {
           return (
@@ -21,7 +28,9 @@ export default function Home({ posts }) {
               <Link href={`/posts/` + node.slug} passHref>
                 <a></a>
               </Link>
-
+              <Link href={`/posts/` + node.slug} passHref>
+                <img src={node.featuredImage.node.sourceUrl} className={styles.img} alt="" />
+              </Link>
               <Link href={`/posts/` + node.slug} passHref>
                 <a>
                   <h1 className={styles.title}>{node.title}</h1>
@@ -31,8 +40,7 @@ export default function Home({ posts }) {
           );
         })}
       </div>
-      \
-    </Layout>
+    </div>
   );
 }
 

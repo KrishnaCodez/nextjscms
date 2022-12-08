@@ -7,8 +7,8 @@ import styles from './Image.module.scss';
 const Image = ({
   children,
   className,
-  width = '100%',
-  height = 'auto',
+  width = '900px',
+  height = '1500px',
   src,
   alt,
   srcSet,
@@ -22,7 +22,7 @@ const Image = ({
   return (
     <figure className={imageClassName.toString()}>
       <div className={styles.featuredImageImg}>
-        <img src={src} alt={alt || ''} srcSet={srcSet} sizes={sizes} />
+        <img src={src} alt={alt || ''} width={width} height={height} srcSet={srcSet} sizes={sizes} />
       </div>
       {children && <figcaption>{children}</figcaption>}
       {dangerouslySetInnerHTML && (

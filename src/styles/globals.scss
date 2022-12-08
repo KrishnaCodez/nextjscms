@@ -1,6 +1,13 @@
 @import "styles/settings/__settings";
 @import "style.css";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700&display=swap");
 
+body {
+  margin: 0;
+  line-height: normal;
+}
 a:hover {
   text-decoration: none;
 }
@@ -10,7 +17,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Montserrat, sans-serif;
 }
 
 a {
@@ -30,4 +36,11 @@ a {
     color: black;
     background: white;
   }
+}
+
+:root {
+  /* fonts */
+  --font-lexend-deca: "Lexend Deca";
+  --font-space-grotesk: "Space Grotesk";
+  --font-syne: Syne;
 }

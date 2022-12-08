@@ -2,10 +2,12 @@
   border-radius: 6.5px;
 }
 .container {
-  margin-top: 2%;
+  margin-top: 4%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  gap: 40px;
 }
 .postcard {
   padding: 0;
@@ -13,11 +15,24 @@
   width: auto;
   margin: 0;
 }
+.img {
+  border-radius: 4px;
+  margin-top: 30px;
+}
 .title {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1.2px;
   width: 450px;
+}
+.headContainer {
+  margin-top: 14%;
+  text-align: center;
+}
+.h1 {
+  font-family: var(--font-syne);
+  font-size: 60px;
+  line-height: 60px;
 }
 
 @media (max-width: 1200px) {
@@ -26,17 +41,73 @@
   }
 }
 
+@media (max-width: 961px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: 14%;
+  }
+  .title {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 43px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 14%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 14%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: 14%;
+  }
+}
 @media (max-width: 700px) {
   .container {
     grid-template-columns: 1fr;
+    margin-top: 14%;
   }
   .postcard {
-    width: 85%;
     margin: auto;
     margin-bottom: 20px;
   }
   .title {
+    width: 90%;
     margin-top: 10px;
-    font-size: 19px;
+    font-size: 20px;
+  }
+  .img {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 912px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: 14%;
+  }
+  .headContainer {
+    margin-top: 14%;
+  }
+  .container {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .headContainer {
+    margin-top: 25%;
+  }
+  .h1 {
+    line-height: 46px;
+    font-size: 40px;
   }
 }
