@@ -1,21 +1,18 @@
-import Head from 'next/head';
-import Image from 'next/image';
-
-import Layout from 'components/Layout';
-
-import Section from 'components/Section';
-import Container from 'components/Container';
 import Link from 'next/link';
 import { getPostsForHome } from 'lib/api';
-import Intro from 'components/Intro';
+
 import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';
-import { motion } from 'framer-motion';
+
+import Nav from 'components/Nav';
 
 export default function Home({ posts }) {
   return (
     <div>
+      <Nav />
+      <h1 className={styles.hidden}>a</h1>
       <LandingSection />
+
       <div className={styles.headContainer}>
         <h1 className={styles.h1}>
           Our Latest <br /> Blog
