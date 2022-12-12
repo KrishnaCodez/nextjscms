@@ -32,7 +32,15 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html {...this.helmetHtmlAttrComponents}>
-        <Head>{this.helmetHeadComponents}</Head>
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
+          {this.helmetHeadComponents}
+        </Head>
         <body {...this.helmetBodyAttrComponents}>
           <Main />
           <NextScript />
