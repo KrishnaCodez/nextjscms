@@ -1,3 +1,7 @@
+// @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700&display=swap");
+
 @keyframes fade-in-top {
   0% {
     transform: translateY(-50px);
@@ -51,7 +55,7 @@
 .landingPageTemplate {
   font-size: 110px;
   line-height: 105px;
-  font-family: var(--font-syne);
+  font-family: "Syne", sans-serif;
   text-shadow: -3px 3px 0#fff;
 }
 
