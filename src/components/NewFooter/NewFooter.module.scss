@@ -1,0 +1,151 @@
+.footer {
+  background-color: #1d2428;
+  color: white;
+  width: 100%;
+  margin-top: 30%;
+  font-size: 13px;
+  padding: 120px 0 30px;
+  line-height: 20px;
+  border-top-left-radius: 125px;
+}
+// 253237
+.footerContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.colume {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.colume:nth-child(2),
+.colume:nth-child(3) {
+  flex-basis: 15%;
+}
+.logo {
+  width: 150px;
+  height: 90px;
+  margin-left: 0;
+  margin-bottom: 0px;
+}
+
+.colume {
+  h3 {
+    color: white;
+    width: fit-content;
+    margin-top: 27px;
+    margin-bottom: 20px;
+  }
+  h4 {
+    color: white;
+  }
+  .email {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+}
+.callNumber {
+  font-size: 18px;
+}
+.ul {
+  margin-left: 0;
+  li {
+    margin-bottom: 12px;
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.flexmail {
+  display: flex;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+.envelope {
+  font-size: 26px;
+  margin-right: px;
+  margin-top: 2.6px;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: 0;
+  margin-top: 0;
+}
+
+.submit {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.arrow {
+  font-size: 26px;
+}
+.social {
+  display: flex;
+}
+.socialIcons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 10px;
+  color: #000;
+  background: #fff;
+}
+.hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copy {
+  text-align: center;
+}
+
+.animation {
+  width: 100%;
+  height: 3px;
+  background: #5c6b73;
+  border-radius: 3px;
+
+  top: 25px;
+  left: 0;
+}
+// .animation {
+//   span {
+//     width: 15px;
+//     height: 100%;
+//     background: white;
+//     border-radius: 3px;
+//     position: absolute;
+//     top: 0;
+//     left: 10px;
+//   }
+// }
+
+@media (max-width: 700px) {
+  .colume {
+    flex-basis: 100%;
+  }
+  .colume:nth-child(2),
+  .colume:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
