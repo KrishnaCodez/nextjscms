@@ -277,18 +277,14 @@ const Nav = () => {
             <ul style={{ color: `${linkColor}` }} className="hidden md:flex mr-20 ">
               {navigation?.map((listItem) => {
                 return (
-                  <NavListItem
-                    key={listItem.id}
-                    className="ml-10 text-sm uppercase hover:border-b mr-10"
-                    item={listItem}
-                  />
+                  <NavListItem key={listItem.id} className="ml-10 text-sm uppercase hover:border-b " item={listItem} />
                 );
               })}
-              {/* <li className="text-sm uppercase hover:border-b list-none   uppercase hover:border-b text-lg font-medium mt-4">
+              <li className="text-sm uppercase hover:border-b list-none   uppercase hover:border-b text-lg font-medium mt-4">
                 <Link href="/contact">
                   <a>Contact</a>
                 </Link>
-              </li> */}
+              </li>
             </ul>
 
             {/* Hamburger Icon */}
@@ -392,11 +388,11 @@ const Nav = () => {
                   <NavListItem key={listItem.id} className="ml-10 text-sm uppercase hover:border-b " item={listItem} />
                 );
               })}
-              {/* <li className="text-sm uppercase hover:border-b list-none uppercase hover:border-b text-lg font-medium mt-4">
+              <li className="text-sm uppercase hover:border-b list-none uppercase hover:border-b text-lg font-medium mt-4">
                 <Link href="/contact">
                   <a>Contact</a>
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
