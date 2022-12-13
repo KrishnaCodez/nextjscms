@@ -31,7 +31,7 @@ const NavListItem = ({ className, item }) => {
     window.addEventListener('scroll', handleShadow);
   }, []);
   return (
-    <li key={item.id} className="list-none ml-10  uppercase hover:border-b text-lg font-medium mt-3">
+    <li key={item.id} className="list-none uppercase hover:border-b text-lg font-medium mt-4">
       {!item.path.includes('http') && !item.target && (
         <Link href={item.path}>
           <a title={item.title}>{item.label}</a>

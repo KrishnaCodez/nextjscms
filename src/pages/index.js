@@ -5,6 +5,7 @@ import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';
 
 import Nav from 'components/Nav';
+import NewFooter from 'components/NewFooter';
 
 export default function Home({ posts }) {
   return (
@@ -37,6 +38,7 @@ export default function Home({ posts }) {
           );
         })}
       </div>
+      <NewFooter />
     </div>
   );
 }

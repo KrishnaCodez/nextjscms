@@ -207,7 +207,7 @@ const Nav = () => {
       }
     >
       <nav>
-        <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 mt-2">
+        <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
           <Link href="/">
             <a>
               <svg
@@ -277,9 +277,18 @@ const Nav = () => {
             <ul style={{ color: `${linkColor}` }} className="hidden md:flex mr-20 ">
               {navigation?.map((listItem) => {
                 return (
-                  <NavListItem key={listItem.id} className="ml-10 text-sm uppercase hover:border-b " item={listItem} />
+                  <NavListItem
+                    key={listItem.id}
+                    className="ml-10 text-sm uppercase hover:border-b mr-10"
+                    item={listItem}
+                  />
                 );
               })}
+              {/* <li className="text-sm uppercase hover:border-b list-none   uppercase hover:border-b text-lg font-medium mt-4">
+                <Link href="/contact">
+                  <a>Contact</a>
+                </Link>
+              </li> */}
             </ul>
 
             {/* Hamburger Icon */}
@@ -302,7 +311,7 @@ const Nav = () => {
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full items-center justify-between mt-3">
               <Link href="/">
                 <a>
                   <svg
@@ -383,6 +392,11 @@ const Nav = () => {
                   <NavListItem key={listItem.id} className="ml-10 text-sm uppercase hover:border-b " item={listItem} />
                 );
               })}
+              {/* <li className="text-sm uppercase hover:border-b list-none uppercase hover:border-b text-lg font-medium mt-4">
+                <Link href="/contact">
+                  <a>Contact</a>
+                </Link>
+              </li> */}
             </ul>
           </div>
         </div>
