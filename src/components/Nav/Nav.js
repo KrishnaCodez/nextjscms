@@ -156,7 +156,6 @@ const Nav = () => {
    */
 
   // pressing esc while search is focused will close it
-  //changes
 
   const escFunction = useCallback((event) => {
     if (event.keyCode === 27) {
