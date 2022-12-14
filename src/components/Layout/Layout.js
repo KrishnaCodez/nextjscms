@@ -7,7 +7,7 @@ import { helmetSettingsFromMetadata } from 'lib/site';
 
 import Nav from 'components/Nav';
 import Main from 'components/Main';
-import Footer from 'components/Footer';
+import NewFooter from 'components/NewFooter';
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
 
       <Main>{children}</Main>
 
-      <Footer />
+      <NewFooter />
     </div>
   );
 };

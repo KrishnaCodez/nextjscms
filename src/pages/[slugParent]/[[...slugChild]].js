@@ -59,29 +59,6 @@ export default function Page({ page, breadcrumbs }) {
             __html: content,
           }}
         />
-        =
-        {hasChildren && (
-          <Section className={styles.sectionChildren}>
-            <Container>
-              <aside>
-                <p className={styles.childrenHeader}>
-                  <strong>{title}</strong>
-                </p>
-                <ul>
-                  {children.map((child) => {
-                    return (
-                      <li key={child.id}>
-                        <Link href={child.uri}>
-                          <a>{child.title}</a>
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </aside>
-            </Container>
-          </Section>
-        )}
       </div>
     </Layout>
   );
