@@ -182,6 +182,7 @@
 
       > .navSubMenu {
         display: block;
+        left: 0;
       }
     }
 
@@ -214,6 +215,7 @@
 
   .navSubMenu {
     display: none;
+    left: 0;
     position: absolute;
     white-space: nowrap;
     list-style: none;
