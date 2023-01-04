@@ -275,8 +275,8 @@ const Nav = () => {
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex mr-20 mt-4 ">
             {navigation?.map((listItem) => {
               return (
-                <div className="pl-10 font-medium uppercase">
-                  <NavListItem key={listItem.id} item={listItem} />
+                <div className="pl-10 font-medium uppercase" key={listItem.id}>
+                  <NavListItem item={listItem} />
                 </div>
               );
             })}
