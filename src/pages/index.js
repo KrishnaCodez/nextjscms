@@ -38,6 +38,7 @@ export default function Home({ posts }) {
           );
         })}
       </div>
+
       <NewFooter />
     </div>
   );
