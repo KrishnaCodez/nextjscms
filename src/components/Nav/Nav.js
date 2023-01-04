@@ -280,6 +280,10 @@ const Nav = () => {
                 </div>
               );
             })}
+
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
           </ul>
           {/* Hamburger Icon */}
           <div style={{ color: `${linkColor}` }} onClick={handleNav} className="md:hidden">
