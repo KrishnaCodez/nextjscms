@@ -3,10 +3,12 @@ import { getPostsForHome } from 'lib/api';
 
 import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';
+import { AiOutlineFieldTime } from 'react-icons/ai';
 
 import Nav from 'components/Nav';
 import NewFooter from 'components/NewFooter';
 import { formatDate } from 'models/formatDate';
+import { sanitizeExcerpt } from 'models/excerpt';
 
 export default function Home({ posts }) {
   return (
@@ -35,16 +37,31 @@ export default function Home({ posts }) {
                   <h1 className={styles.title}>{node.title}</h1>
                 </a>
               </Link>
-              <Link href={`/posts/` + node.slug} passHref>
-                <a>{node.excerpt}</a>
-              </Link>
-
-              <span style={{ fontWeight: '500' }}>{formatDate(node.date)}</span>
+              <div className={styles.metadata}>
+                <div className={styles.author}>
+                  <img
+                    width="30px"
+                    height="16px"
+                    src={node.author.node.avatar.url}
+                    className={styles.authorImg}
+                    alt="Author Avatar"
+                  />
+                  <p>{node.author.node.name}</p>
+                </div>
+                <span>
+                  <AiOutlineFieldTime className={styles.clock} />
+                </span>
+                <span className={styles.date}>{formatDate(node.date)}</span>
+              </div>
+              <div>
+                <Link href={`/posts/` + node.slug} passHref>
+                  <p className={styles.excerpt}>{sanitizeExcerpt(node.excerpt)}</p>
+                </Link>
+              </div>
             </div>
           );
         })}
       </div>
-
       <NewFooter />
     </div>
   );

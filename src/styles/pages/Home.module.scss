@@ -38,7 +38,40 @@
   font-size: 60px;
   line-height: 60px;
 }
-
+.excerpt {
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(68, 68, 68);
+  letter-spacing: 1px;
+}
+.metadata {
+  display: flex;
+  margin-top: 12px;
+}
+.clock {
+  font-size: 30px;
+  margin-right: 8px;
+}
+.author {
+  display: flex;
+  margin-right: 40px;
+  font-weight: normal;
+  color: black;
+}
+.date {
+  margin-top: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+}
+.authorImg {
+  border-radius: 50%;
+  margin-right: 10px;
+}
 @media (max-width: 1200px) {
   .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
