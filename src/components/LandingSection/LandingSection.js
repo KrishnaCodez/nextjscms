@@ -92,13 +92,13 @@ const New = () => {
           <div className={styles.hero}>
             <div className={styles.bg}> </div>
             <div className={styles.textdiv}>
-              <b className={styles.landingPageTemplate}>Landing page template </b>
+              <b className={styles.landingPageTemplate}>Explore Your World ! </b>
 
               <div className={styles.paragraphDiv}>
                 <div className={styles.velitOdioBibendumEuViver}>
-                  He wants to, hate to drink football, be a cartoon to put the laoreet. As Put the chocolate dough in
-                  the refrigerator. To adorn the lacinia of life at disease outbreak Feugiat will take care of his free
-                  will pillow An element.
+                  We are dedicated to bringing you the latest in tech news, tips and tricks, gadgets and reviews by
+                  experience users. We&#39;re all about the journey, so join us as we explore the tech industry as
+                  it&#39;s evolving.
                 </div>
               </div>
               <button className={styles.letsSellB}>Lets Explore</button>

@@ -20,12 +20,27 @@ async function fetchAPI(query, { variables } = {}) {
 export async function getPostsForHome() {
     const data = await fetchAPI(`
     {
-        posts(first: 6) {
+        posts(first: 30) {
             edges {
                 node {
+                    author {
+                        node {
+                            avatar {
+                            height
+                            url
+                            width
+                            }
+                            id
+                            name
+                            slug
+                        }
+                    }
+
                     title
                     slug
                     date
+                    excerpt
+                    content
                     featuredImage {
                         node {
                             mediaDetails{
@@ -33,6 +48,7 @@ export async function getPostsForHome() {
                                 width
                             }
                             sourceUrl
+                            altText
                         }
                     }
                 }

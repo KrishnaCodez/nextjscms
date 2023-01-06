@@ -6,6 +6,7 @@ import LandingSection from 'components/LandingSection';
 
 import Nav from 'components/Nav';
 import NewFooter from 'components/NewFooter';
+import { formatDate } from 'models/formatDate';
 
 export default function Home({ posts }) {
   return (
@@ -34,6 +35,11 @@ export default function Home({ posts }) {
                   <h1 className={styles.title}>{node.title}</h1>
                 </a>
               </Link>
+              <Link href={`/posts/` + node.slug} passHref>
+                <a>{node.excerpt}</a>
+              </Link>
+
+              <span style={{ fontWeight: '500' }}>{formatDate(node.date)}</span>
             </div>
           );
         })}
