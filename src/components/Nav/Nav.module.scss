@@ -233,3 +233,14 @@
     }
   }
 }
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    height: 45px;
+  }
+}

@@ -17,6 +17,11 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.sitelogo {
+  margin-top: 20px;
+  height: 55px;
+  width: auto;
+}
 
 .colume {
   flex-basis: 25%;
@@ -147,5 +152,8 @@
   .colume:nth-child(2),
   .colume:nth-child(3) {
     flex-basis: 100%;
+  }
+  .sitelogo {
+    height: 52px;
   }
 }
