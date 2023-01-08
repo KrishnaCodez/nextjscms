@@ -48,7 +48,7 @@ export default function Home({ posts }) {
                 <a></a>
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
-                <img src={node.featuredImage.node.sourceUrl} width="30" height="30" className={styles.img} alt="" />
+                <img src={node.featuredImage.node.sourceUrl} width="578" height="578" className={styles.img} alt="" />
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
                 <a>
