@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getPostsForHome } from 'lib/api';
 import Head from 'next/head';
-import Image from 'components/Image';
+import Image from 'next/image';
 
 import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';

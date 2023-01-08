@@ -6,7 +6,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { TiSocialTwitter } from 'react-icons/ti';
 import { TiSocialLinkedin } from 'react-icons/ti';
-import Image from 'components/Image';
+import Image from 'next/image';
 
 const NewFooter = () => {
   return (

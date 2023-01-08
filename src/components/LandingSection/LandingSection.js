@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './LandingSection.module.scss';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'components/Image';
+import Image from 'next/image';
 
 const New = () => {
   useEffect(() => {
