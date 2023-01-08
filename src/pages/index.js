@@ -64,7 +64,7 @@ export default function Home({ posts }) {
                     <img
                       width={30}
                       height={30}
-                      src={node.author.node.avatar.url}
+                      src="/assests/author.webp"
                       className={styles.authorImg}
                       alt="Author Avatar"
                     />
