@@ -480,8 +480,8 @@ c12 -18 35 -43 50 -54 28 -21 37 -21 693 -24 l664 -2 0 -386 c0 -371 1 -388
             <ul className="font-medium uppercase">
               {navigation?.map((listItem) => {
                 return (
-                  <div className="mb-3 -ml-6">
-                    <NavListItem key={listItem.id} className={styles.navSubMenu} item={listItem} />
+                  <div className="mb-3 -ml-6" key={listItem.id}>
+                    <NavListItem className={styles.navSubMenu} item={listItem} />
                   </div>
                 );
               })}
