@@ -107,7 +107,7 @@ const New = () => {
         </div>
 
         <div className={styles.logosLineDiv}>
-          <img className={styles.logoipsum28} alt="" src="../assests/logoipsum--28.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--28.svg" />
           <img className={styles.logoipsum28} alt="" src="../assests/logoipsum--01.svg" />
 
           <img className={styles.logoipsum28} alt="" src="../assests/logoipsum--04.svg" />

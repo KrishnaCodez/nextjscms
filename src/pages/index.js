@@ -58,13 +58,9 @@ export default function Home({ posts }) {
               </Link>
               <div className={styles.metadata}>
                 <div className={styles.author}>
-                  <Image
-                    width={30}
-                    height={30}
-                    src={node.author.node.avatar.url}
-                    className={styles.authorImg}
-                    alt="Author Avatar"
-                  />
+                  <div className={styles.authorImg}>
+                    <Image width={30} height={30} src={node.author.node.avatar.url} alt="Author Avatar" />
+                  </div>
                   <p>{node.author.node.name}</p>
                 </div>
                 <span>
