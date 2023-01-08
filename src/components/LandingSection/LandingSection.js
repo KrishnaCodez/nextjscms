@@ -109,14 +109,14 @@ const New = () => {
 
         <div className={styles.logosLineDiv}>
           <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--28.svg" />
-          <img className={styles.logoipsum28} alt="" src="../assests/logoipsum--01.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--01.svg" />
 
-          <img className={styles.logoipsum28} alt="" src="../assests/logoipsum--04.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--04.svg" />
 
-          <img className={styles.logoIcon1} alt="" src="../assests/logoipsum--01.svg" />
-          <img className={styles.logoipsum28} alt="" src="../assests/logoipsum--27.svg" />
+          <Image className={styles.logoIcon1} width={90} height={24} alt="" src="../assests/logoipsum--01.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--27.svg" />
 
-          <img className={styles.logoipsum28} alt="" src="../assests/logoipsum--02.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--02.svg" />
         </div>
       </div>
     </div>
