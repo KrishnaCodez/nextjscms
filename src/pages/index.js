@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getPostsForHome } from 'lib/api';
 import Head from 'next/head';
+import Image from 'components/Image';
 
 import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';
@@ -57,9 +58,9 @@ export default function Home({ posts }) {
               </Link>
               <div className={styles.metadata}>
                 <div className={styles.author}>
-                  <img
-                    width="30px"
-                    height="16px"
+                  <Image
+                    width={30}
+                    height={30}
                     src={node.author.node.avatar.url}
                     className={styles.authorImg}
                     alt="Author Avatar"
