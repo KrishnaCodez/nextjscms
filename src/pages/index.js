@@ -10,6 +10,7 @@ import Nav from 'components/Nav';
 import NewFooter from 'components/NewFooter';
 import { formatDate } from 'models/formatDate';
 import { sanitizeExcerpt } from 'models/excerpt';
+import Breadcrumbs from 'components/Breadcrumbs';
 
 export default function Home({ posts }) {
   return (
@@ -47,7 +48,7 @@ export default function Home({ posts }) {
                 <a></a>
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
-                <img src={node.featuredImage.node.sourceUrl} className={styles.img} alt="" />
+                <img src={node.featuredImage.node.sourceUrl} width="auto" height="auto" className={styles.img} alt="" />
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
                 <a>
