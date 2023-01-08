@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getPostsForHome } from 'lib/api';
+import Head from 'next/head';
 
 import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';
@@ -13,6 +14,9 @@ import { sanitizeExcerpt } from 'models/excerpt';
 export default function Home({ posts }) {
   return (
     <div>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <Nav />
       <h1 className={styles.hidden}>a</h1>
       <LandingSection />

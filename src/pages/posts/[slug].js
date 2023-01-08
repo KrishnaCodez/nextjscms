@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
 import { getPostBySlug, getRecentPosts, getRelatedPosts, postPathBySlug } from 'lib/posts';
 import { categoryPathBySlug } from 'lib/categories';
@@ -68,6 +69,9 @@ export default function Post({ post, socialImage, related }) {
 
   return (
     <Layout>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <Helmet {...helmetSettings} />
 
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />

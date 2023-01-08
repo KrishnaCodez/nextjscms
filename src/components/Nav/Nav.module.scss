@@ -238,9 +238,11 @@
   height: 60px;
   width: auto;
 }
+.mobilelogo {
+  margin-top: 5px;
+  height: 35px;
+  width: auto;
+}
 
 @media (max-width: 700px) {
-  .logo {
-    height: 45px;
-  }
 }

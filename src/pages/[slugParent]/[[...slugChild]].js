@@ -6,6 +6,7 @@ import { WebpageJsonLd } from 'lib/json-ld';
 import { helmetSettingsFromMetadata } from 'lib/site';
 import useSite from 'hooks/use-site';
 import usePageMetadata from 'hooks/use-page-metadata';
+import Head from 'next/head';
 
 import Layout from 'components/Layout';
 import Header from 'components/Header';
@@ -43,6 +44,9 @@ export default function Page({ page, breadcrumbs }) {
 
   return (
     <Layout>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <Helmet {...helmetSettings} />
 
       <WebpageJsonLd
