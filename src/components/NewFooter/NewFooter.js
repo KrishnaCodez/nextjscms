@@ -6,6 +6,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { TiSocialTwitter } from 'react-icons/ti';
 import { TiSocialLinkedin } from 'react-icons/ti';
+import Image from 'components/Image';
 
 const NewFooter = () => {
   return (
@@ -15,7 +16,7 @@ const NewFooter = () => {
           <div className={styles.colume}>
             <Link href="/">
               <a>
-                <img src="../assests/black-logo.png" className={styles.sitelogo} alt="" />
+                <Image height={55} width={240} src="../assests/black-logo.png" className={styles.sitelogo} alt="" />
               </a>
             </Link>
             <p>
