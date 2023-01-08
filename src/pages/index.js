@@ -15,7 +15,20 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
+        <title>Epic Tech - Empowering you with the latest tech news</title>
         <meta name="robots" content="noindex" />
+        <meta name="description" content="empowering you with the latest tech news" />
+        <meta property="og:url" content="www.epictech.me" />
+        <meta property="og:title" content="Epic Tech - Empowering you with the latest tech news" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="empowering you with the latest tech news" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Nav />
       <h1 className={styles.hidden}>a</h1>

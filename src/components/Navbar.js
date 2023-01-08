@@ -162,6 +162,7 @@ const Navbar = () => {
                     viewBox="0 0 170 41"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className={styles.logo}
                   >
                     <path
                       d="M51.8601 28.138H63.8121V24.538H56.1081V10.978H51.8601V28.138Z"
