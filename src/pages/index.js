@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getPostsForHome } from 'lib/api';
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from 'components/Image';
 
 import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';
@@ -50,7 +50,7 @@ export default function Home({ posts }) {
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
                 <div className={styles.img}>
-                  <img src={node.featuredImage.node.sourceUrl} priority alt="featuredImage" />
+                  <Image src={node.featuredImage.node.sourceUrl} width={578} height={578} alt="" />
                 </div>
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
@@ -60,8 +60,14 @@ export default function Home({ posts }) {
               </Link>
               <div className={styles.metadata}>
                 <div className={styles.author}>
-                  <div className={styles.authorImg}>
-                    <img src={node.author.node.avatar.url} alt="Author Avatar" />
+                  <div>
+                    <img
+                      width={30}
+                      height={30}
+                      src={node.author.node.avatar.url}
+                      className={styles.authorImg}
+                      alt="Author Avatar"
+                    />
                   </div>
                   <p>{node.author.node.name}</p>
                 </div>

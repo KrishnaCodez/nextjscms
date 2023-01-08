@@ -38,14 +38,14 @@ const New = () => {
       <div>
         <div className={styles.landingcontainer}>
           <div className={styles.laptop}>
-            <Image
-              className={styles.backgroundShapeIcon}
-              alt=""
-              width={578}
-              height={578}
-              src="/assests/background-shape@2x.png"
-              data-animate-on-scroll
-            />
+            <div className={styles.backgroundShapeIcon}>
+              <img
+                className={styles.backgroundShapeIcon}
+                alt=""
+                src="/assests/background-shape@2x.png"
+                data-animate-on-scroll
+              />
+            </div>
             <img
               className={styles.backgroundShapeIcon1}
               alt=""
