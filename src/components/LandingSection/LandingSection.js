@@ -38,10 +38,12 @@ const New = () => {
       <div>
         <div className={styles.landingcontainer}>
           <div className={styles.laptop}>
-            <img
+            <Image
               className={styles.backgroundShapeIcon}
               alt=""
-              src="../assests/background-shape@2x.png"
+              width={578}
+              height={578}
+              src="/assests/background-shape@2x.png"
               data-animate-on-scroll
             />
             <img
@@ -108,15 +110,15 @@ const New = () => {
         </div>
 
         <div className={styles.logosLineDiv}>
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--28.svg" />
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--01.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--28.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--01.svg" />
 
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--04.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--04.svg" />
 
-          <Image className={styles.logoIcon1} width={90} height={24} alt="" src="../assests/logoipsum--01.svg" />
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--27.svg" />
+          <Image className={styles.logoIcon1} width={90} height={24} alt="" src="/assests/logoipsum--01.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--27.svg" />
 
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="../assests/logoipsum--02.svg" />
+          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--02.svg" />
         </div>
       </div>
     </div>

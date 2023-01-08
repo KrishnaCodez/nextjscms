@@ -16,7 +16,7 @@ const NewFooter = () => {
           <div className={styles.colume}>
             <Link href="/">
               <a>
-                <Image height={55} width={240} src="../assests/black-logo.png" className={styles.sitelogo} alt="" />
+                <Image height={55} width={240} src="/assests/black-logo.png" className={styles.sitelogo} alt="" />
               </a>
             </Link>
             <p>
