@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { getPostsForHome } from 'lib/api';
 import Head from 'next/head';
-import Image from 'components/Image';
+import Image from 'next/image';
 
 import styles from 'styles/pages/Home.module.scss';
 import LandingSection from 'components/LandingSection';
@@ -68,8 +68,8 @@ export default function Home({ posts }) {
                 <div className={styles.author}>
                   <div>
                     <Image
-                      width="30"
-                      height="30"
+                      width={30}
+                      height={30}
                       src="/assests/author.webp"
                       className={styles.authorImg}
                       alt="Author Avatar"

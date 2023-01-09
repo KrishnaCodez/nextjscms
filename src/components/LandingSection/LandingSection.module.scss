@@ -351,6 +351,9 @@
 
 /* Medium Mobile Screen */
 @media only screen and (max-width: 560px) {
+  .laptop {
+    display: none;
+  }
   .backgroundShapeIcon,
   .backgroundShapeIcon1.animate,
   .backgroundShapeIcon2.animate,
@@ -448,6 +451,9 @@
 /* Mobile */
 
 @media (max-width: 500px) {
+  .laptop {
+    display: none;
+  }
   .backgroundShapeIcon,
   .backgroundShapeIcon1.animate,
   .backgroundShapeIcon2.animate,
@@ -544,6 +550,9 @@
 /* Smallest Screen For Mobile */
 
 @media (max-width: 320px) {
+  .laptop {
+    display: none;
+  }
   .landingPageTemplate {
     font-size: 35px;
     line-height: 45px;
