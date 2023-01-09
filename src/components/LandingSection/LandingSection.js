@@ -66,6 +66,32 @@ const New = () => {
             />
           </div>
 
+          <div className={styles.mobile}>
+            <img
+              className={styles.backgroundShapeIcon4}
+              alt=""
+              src="../assests/background-shape4@2x.png"
+              data-animate-on-scroll
+            />
+            <img
+              className={styles.backgroundShapeIcon5}
+              alt=""
+              src="../assests/background-shape5@2x.png"
+              data-animate-on-scroll
+            />
+            <img
+              className={styles.backgroundShapeIcon6}
+              alt=""
+              src="../assests/background-shape6@2x.png"
+              data-animate-on-scroll
+            />
+            <img
+              className={styles.backgroundShapeIcon7}
+              alt=""
+              src="../assests/background-shape7@2x.png"
+              data-animate-on-scroll
+            />
+          </div>
           <div className={styles.hero}>
             <div className={styles.bg}> </div>
             <div className={styles.textdiv}>
