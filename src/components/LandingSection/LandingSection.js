@@ -41,14 +41,7 @@ const New = () => {
             <div className={styles.backgroundShapeIcon}></div>
           </div>
 
-          <div className={styles.mobile}>
-            <img
-              className={styles.backgroundShapeIcon7}
-              alt=""
-              src="../assests/background-shape7@2x.png"
-              data-animate-on-scroll
-            />
-          </div>
+          <div className={styles.mobile}></div>
           <div className={styles.hero}>
             <div className={styles.bg}> </div>
             <div className={styles.textdiv}>
