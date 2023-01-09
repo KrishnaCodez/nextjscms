@@ -38,53 +38,10 @@ const New = () => {
       <div>
         <div className={styles.landingcontainer}>
           <div className={styles.laptop}>
-            <div className={styles.backgroundShapeIcon}>
-              <img
-                className={styles.backgroundShapeIcon}
-                alt=""
-                src="/assests/background-shape@2x.png"
-                data-animate-on-scroll
-              />
-            </div>
-            <img
-              className={styles.backgroundShapeIcon1}
-              alt=""
-              src="../assests/background-shape1@2x.png"
-              data-animate-on-scroll
-            />
-            <img
-              className={styles.backgroundShapeIcon2}
-              alt=""
-              src="../assests/background-shape2@2x.png"
-              data-animate-on-scroll
-            />
-            <img
-              className={styles.backgroundShapeIcon3}
-              alt=""
-              src="../assests/background-shape3@2x.png"
-              data-animate-on-scroll
-            />
+            <div className={styles.backgroundShapeIcon}></div>
           </div>
 
           <div className={styles.mobile}>
-            <img
-              className={styles.backgroundShapeIcon4}
-              alt=""
-              src="../assests/background-shape4@2x.png"
-              data-animate-on-scroll
-            />
-            <img
-              className={styles.backgroundShapeIcon5}
-              alt=""
-              src="../assests/background-shape5@2x.png"
-              data-animate-on-scroll
-            />
-            <img
-              className={styles.backgroundShapeIcon6}
-              alt=""
-              src="../assests/background-shape6@2x.png"
-              data-animate-on-scroll
-            />
             <img
               className={styles.backgroundShapeIcon7}
               alt=""
