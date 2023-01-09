@@ -34,7 +34,7 @@ export default function Home({ posts }) {
       </Head>
       <Nav />
       <h1 className={styles.hidden}>a</h1>
-      {/* <LandingSection /> */}
+      <LandingSection />
 
       <div className={styles.headContainer}>
         <h1 className={styles.h1}>
