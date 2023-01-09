@@ -66,32 +66,6 @@ const New = () => {
             />
           </div>
 
-          <div className={styles.mobile}>
-            <img
-              className={styles.backgroundShapeIcon4}
-              alt=""
-              src="../assests/background-shape4@2x.png"
-              data-animate-on-scroll
-            />
-            <img
-              className={styles.backgroundShapeIcon5}
-              alt=""
-              src="../assests/background-shape5@2x.png"
-              data-animate-on-scroll
-            />
-            <img
-              className={styles.backgroundShapeIcon6}
-              alt=""
-              src="../assests/background-shape6@2x.png"
-              data-animate-on-scroll
-            />
-            <img
-              className={styles.backgroundShapeIcon7}
-              alt=""
-              src="../assests/background-shape7@2x.png"
-              data-animate-on-scroll
-            />
-          </div>
           <div className={styles.hero}>
             <div className={styles.bg}> </div>
             <div className={styles.textdiv}>
@@ -110,15 +84,57 @@ const New = () => {
         </div>
 
         <div className={styles.logosLineDiv}>
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--28.svg" />
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--01.svg" />
+          <Image
+            className={styles.logoipsum28}
+            width={90}
+            height={24}
+            alt=""
+            src="/assests/logoipsum--28.svg"
+            loading="lazy"
+          />
+          <Image
+            className={styles.logoipsum28}
+            width={90}
+            height={24}
+            alt=""
+            src="/assests/logoipsum--01.svg"
+            loading="lazy"
+          />
 
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--04.svg" />
+          <Image
+            className={styles.logoipsum28}
+            width={90}
+            height={24}
+            alt=""
+            src="/assests/logoipsum--04.svg"
+            loading="lazy"
+          />
 
-          <Image className={styles.logoIcon1} width={90} height={24} alt="" src="/assests/logoipsum--01.svg" />
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--27.svg" />
+          <Image
+            className={styles.logoIcon1}
+            width={90}
+            height={24}
+            alt=""
+            src="/assests/logoipsum--01.svg"
+            loading="lazy"
+          />
+          <Image
+            className={styles.logoipsum28}
+            width={90}
+            height={24}
+            alt=""
+            src="/assests/logoipsum--27.svg"
+            loading="lazy"
+          />
 
-          <Image className={styles.logoipsum28} width={90} height={24} alt="" src="/assests/logoipsum--02.svg" />
+          <Image
+            className={styles.logoipsum28}
+            width={90}
+            height={24}
+            alt=""
+            src="/assests/logoipsum--02.svg"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>

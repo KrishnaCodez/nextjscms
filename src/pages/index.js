@@ -50,7 +50,13 @@ export default function Home({ posts }) {
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
                 <a className={styles.img}>
-                  <Image src={node.featuredImage.node.sourceUrl} width={578} height={578} alt="Featured Images" />
+                  <Image
+                    src={node.featuredImage.node.sourceUrl}
+                    width={578}
+                    height={578}
+                    loading="lazy"
+                    alt="Featured Images"
+                  />
                 </a>
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
@@ -61,12 +67,13 @@ export default function Home({ posts }) {
               <div className={styles.metadata}>
                 <div className={styles.author}>
                   <div>
-                    <img
+                    <Image
                       width="30"
                       height="30"
                       src="/assests/author.webp"
                       className={styles.authorImg}
                       alt="Author Avatar"
+                      loading="lazy"
                     />
                   </div>
                   <p>{node.author.node.name}</p>
