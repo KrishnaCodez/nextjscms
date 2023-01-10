@@ -71,6 +71,7 @@ export default function Home({ posts }) {
                     <Image
                       width={30}
                       height={30}
+                      quality={60}
                       src="/assests/author.webp"
                       className={styles.authorImg}
                       alt="Author Avatar"
