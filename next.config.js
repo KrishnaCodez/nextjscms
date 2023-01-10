@@ -44,7 +44,11 @@ module.exports = () => {
 
   return plugins.reduce((acc, plugin) => plugin(acc), nextConfig);
 };
-
+module.exports = {
+  images: {
+    domains: ['www.epictech.me'],
+  },
+};
 // module.exports = {
 //   async redirects() {
 //     return [
