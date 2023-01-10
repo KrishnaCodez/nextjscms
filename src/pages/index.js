@@ -53,6 +53,7 @@ export default function Home({ posts }) {
                   <Image
                     src={node.featuredImage.node.sourceUrl}
                     width={578}
+                    quality={50}
                     height={578}
                     loading="lazy"
                     alt="Featured Images"

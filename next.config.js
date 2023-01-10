@@ -44,6 +44,7 @@ module.exports = () => {
 
   return plugins.reduce((acc, plugin) => plugin(acc), nextConfig);
 };
+
 // module.exports = {
 //   async redirects() {
 //     return [

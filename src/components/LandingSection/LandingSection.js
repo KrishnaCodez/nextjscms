@@ -42,26 +42,26 @@ const New = () => {
               <img
                 className={styles.backgroundShapeIcon}
                 alt=""
-                src="/assests/background-shape@2x.png"
+                src="/assests/background-shape@2x.webp"
                 data-animate-on-scroll
               />
             </div>
             <img
               className={styles.backgroundShapeIcon1}
               alt=""
-              src="../assests/background-shape1@2x.png"
+              src="../assests/background-shape1@2x.webp"
               data-animate-on-scroll
             />
             <img
               className={styles.backgroundShapeIcon2}
               alt=""
-              src="../assests/background-shape2@2x.png"
+              src="../assests/background-shape2@2x.webp"
               data-animate-on-scroll
             />
             <img
               className={styles.backgroundShapeIcon3}
               alt=""
-              src="../assests/background-shape3@2x.png"
+              src="../assests/background-shape3@2x.webp"
               data-animate-on-scroll
             />
           </div>
@@ -70,25 +70,25 @@ const New = () => {
             <img
               className={styles.backgroundShapeIcon4}
               alt=""
-              src="../assests/background-shape4@2x.png"
+              src="../assests/background-shape4@2x.webp"
               data-animate-on-scroll
             />
             <img
               className={styles.backgroundShapeIcon5}
               alt=""
-              src="../assests/background-shape5@2x.png"
+              src="../assests/background-shape5@2x.webp"
               data-animate-on-scroll
             />
             <img
               className={styles.backgroundShapeIcon6}
               alt=""
-              src="../assests/background-shape6@2x.png"
+              src="../assests/background-shape6@2x.webp"
               data-animate-on-scroll
             />
             <img
               className={styles.backgroundShapeIcon7}
               alt=""
-              src="../assests/background-shape7@2x.png"
+              src="../assests/background-shape7@2x.webp"
               data-animate-on-scroll
             />
           </div>
@@ -114,6 +114,7 @@ const New = () => {
             className={styles.logoipsum28}
             width={90}
             height={24}
+            quality={10}
             alt=""
             src="/assests/logoipsum--28.svg"
             loading="lazy"
@@ -122,6 +123,7 @@ const New = () => {
             className={styles.logoipsum28}
             width={90}
             height={24}
+            quality={10}
             alt=""
             src="/assests/logoipsum--01.svg"
             loading="lazy"
@@ -131,6 +133,7 @@ const New = () => {
             className={styles.logoipsum28}
             width={90}
             height={24}
+            quality={10}
             alt=""
             src="/assests/logoipsum--04.svg"
             loading="lazy"
@@ -140,6 +143,7 @@ const New = () => {
             className={styles.logoIcon1}
             width={90}
             height={24}
+            quality={10}
             alt=""
             src="/assests/logoipsum--01.svg"
             loading="lazy"
@@ -148,6 +152,7 @@ const New = () => {
             className={styles.logoipsum28}
             width={90}
             height={24}
+            quality={10}
             alt=""
             src="/assests/logoipsum--27.svg"
             loading="lazy"
@@ -157,6 +162,7 @@ const New = () => {
             className={styles.logoipsum28}
             width={90}
             height={24}
+            quality={10}
             alt=""
             src="/assests/logoipsum--02.svg"
             loading="lazy"
