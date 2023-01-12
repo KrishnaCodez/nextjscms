@@ -49,14 +49,18 @@ export default function Home({ posts }) {
                 <a></a>
               </Link>
               <Link href={`/posts/` + node.slug} passHref>
-                <img
-                  src={node.featuredImage.node.sourceUrl}
-                  width={578}
-                  height={320}
-                  loading="lazy"
-                  alt="Featured Images"
-                />
+                <a href="">
+                  <img
+                    src={node.featuredImage.node.sourceUrl}
+                    className={styles.img}
+                    width="auto"
+                    height="auto"
+                    loading="lazy"
+                    alt="Featured Images"
+                  />
+                </a>
               </Link>
+
               <Link href={`/posts/` + node.slug} passHref>
                 <a>
                   <h1 className={styles.title}>{node.title}</h1>
@@ -75,14 +79,14 @@ export default function Home({ posts }) {
                       loading="lazy"
                     />
                   </div>
-                  <p>{node.author.node.name}</p>
+                  <p className={styles.authorleft}>{node.author.node.name}</p>
                 </div>
                 <span>
                   <AiOutlineFieldTime className={styles.clock} />
                 </span>
                 <span className={styles.date}>{formatDate(node.date)}</span>
               </div>
-              <div>
+              <div className={styles.fade}>
                 <Link href={`/posts/` + node.slug} passHref>
                   <p className={styles.excerpt}>{sanitizeExcerpt(node.excerpt)}</p>
                 </Link>

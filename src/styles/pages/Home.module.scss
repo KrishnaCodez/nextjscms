@@ -38,14 +38,27 @@
   font-size: 60px;
   line-height: 60px;
 }
+.fade {
+  flex: 1 1 0%;
+  position: relative;
+}
+
 .excerpt {
-  margin-top: 30px;
-  font-size: 18px;
+  width: 98%;
+  margin-top: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  line-height: 1.5;
-  color: rgb(68, 68, 68);
+  color: unset;
   letter-spacing: 1px;
+  background-color: transparent;
+  line-height: 150%;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 0.895rem;
+  text-align: left;
+  margin-bottom: 0px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(46, 46, 46) 90%, rgb(92, 92, 92) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .metadata {
   display: flex;
@@ -54,6 +67,9 @@
 .clock {
   font-size: 30px;
   margin-right: 8px;
+}
+.authorleft {
+  margin-left: 10px;
 }
 .author {
   display: flex;
@@ -86,7 +102,10 @@
   .title {
     width: 90%;
     margin-top: 10px;
-    font-size: 43px;
+    font-size: 35px;
+  }
+  .excerpt {
+    font-size: 28px;
   }
 }
 
@@ -141,12 +160,20 @@
     margin-top: 4%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .headContainer {
     margin-top: 25%;
+  }
+  .title {
+    width: 100%;
+    font-size: 19px;
   }
   .h1 {
     line-height: 46px;
     font-size: 40px;
+  }
+  .excerpt {
+    width: 95%;
+    font-size: 0.895rem;
   }
 }
