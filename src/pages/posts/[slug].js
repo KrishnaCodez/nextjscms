@@ -83,29 +83,14 @@ export default function Post({ post, socialImage, related }) {
 
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
 
-      {/* <Header>
-        {featuredImage && (
-          <FeaturedImage
-            {...featuredImage}
-            src={featuredImage.sourceUrl}
-            dangerouslySetInnerHTML={featuredImage.caption}
-          />
-        )}
+      <Header>
         <h1
           className={styles.title}
           dangerouslySetInnerHTML={{
             __html: title,
           }}
         />
-        <Metadata
-          className={styles.postMetadata}
-          date={date}
-          author={author}
-          categories={categories}
-          options={metadataOptions}
-          isSticky={isSticky}
-        />
-      </Header> */}
+      </Header>
 
       <Content>
         <Section>
