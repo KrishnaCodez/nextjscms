@@ -18,7 +18,7 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>Epic Tech - Empowering you with the latest tech news</title>
-        <meta name="description" content="empowering you with the latest tech news" />
+        <meta name="description" content="epictech - empowering you with the latest tech news" />
         <meta property="og:url" content="www.epictech.me" />
         <meta property="og:title" content="Epic Tech - Empowering you with the latest tech news" />
         <meta property="og:type" content="website" />
