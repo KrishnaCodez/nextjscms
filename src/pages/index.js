@@ -19,7 +19,14 @@ export default function Home({ posts }) {
       <Head>
         <title>Epic Tech - Empowering you with the latest tech news</title>
         <meta name="description" content="epictech - empowering you with the latest tech news" />
+        <meta
+          name="keywords"
+          content="epictech, techepic, epictech.me, epic tech, tech epic, epic, tech, gadgets, technology"
+        />
         <meta property="og:url" content="www.epictech.me" />
+        <meta property="og:site_name" content="Epic Tech - Empowering you with the latest tech news" />
+        <meta name="author" content="Urvish" />
+        <meta name="language" content="English" />
         <meta property="og:title" content="Epic Tech - Empowering you with the latest tech news" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="empowering you with the latest tech news" />
