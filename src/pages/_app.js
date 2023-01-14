@@ -27,17 +27,15 @@ function App({ Component, pageProps = {}, metadata, recentPosts, categories, men
 
   return (
     <div>
-      <Head>
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=UA-254146038-1`} />
-        <Script>
-          {`  window.dataLayer = window.dataLayer || [];
+      <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=UA-254146038-1" />
+      <Script strategy="afterInteractive" id="google-analytics">
+        {`  window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
                  gtag('config', 'UA-254146038-1');
             `}
-        </Script>
-      </Head>
+      </Script>
 
       <SiteContext.Provider value={site}>
         <SearchProvider>
