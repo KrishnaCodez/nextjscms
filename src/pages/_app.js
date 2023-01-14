@@ -8,12 +8,14 @@ import { getRecentPosts } from 'lib/posts';
 import { getCategories } from 'lib/categories';
 import NextNProgress from 'nextjs-progressbar';
 import { getAllMenus } from 'lib/menus';
+import Script from 'next/script';
 
 import 'styles/globals.scss';
 import 'styles/wordpress.scss';
 import variables from 'styles/_variables.module.scss';
 
 import '@urvishmali/kadence-headless-styles/kadence.css';
+import Head from 'next/head';
 
 function App({ Component, pageProps = {}, metadata, recentPosts, categories, menus }) {
   const site = useSiteContext({
@@ -24,12 +26,26 @@ function App({ Component, pageProps = {}, metadata, recentPosts, categories, men
   });
 
   return (
-    <SiteContext.Provider value={site}>
-      <SearchProvider>
-        <NextNProgress height={4} color={variables.progressbarColor} />
-        <Component {...pageProps} />
-      </SearchProvider>
-    </SiteContext.Provider>
+    <div>
+      <Head>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=UA-254146038-1`} />
+        <Script>
+          {`  window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                 gtag('config', 'UA-254146038-1');
+            `}
+        </Script>
+      </Head>
+
+      <SiteContext.Provider value={site}>
+        <SearchProvider>
+          <NextNProgress height={4} color={variables.progressbarColor} />
+          <Component {...pageProps} />
+        </SearchProvider>
+      </SiteContext.Provider>
+    </div>
   );
 }
 

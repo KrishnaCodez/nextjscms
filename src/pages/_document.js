@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-document-import-in-page */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 import { Helmet } from 'react-helmet';
 
 // Via https://github.com/vercel/next.js/blob/canary/examples/with-react-helmet/pages/_document.js
@@ -33,6 +34,16 @@ export default class MyDocument extends Document {
     return (
       <Html {...this.helmetHtmlAttrComponents}>
         <Head>
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-254146038-1" />
+          <Script>
+            {`  window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                 gtag('config', 'UA-254146038-1');
+            `}
+          </Script>
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
